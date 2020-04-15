@@ -14,5 +14,8 @@ git add *scss
 git commit -m "modal height" && git push -u  
 (if Angular runs checks) git commit -m "modal height" --no-verify && git push -u --no-verify   
 
+### Push overwrite
+git commit --amend --no-edit && git push -u --force
+
 ### Pull master
 git checkout master && git pull
