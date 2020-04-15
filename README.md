@@ -11,8 +11,8 @@ find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;
 ### Create branch, commit & push  
 git  checkout -b feature/modal-height  
 git add *scss  
-git commit -m "modal height" --no-verify (if Angular runs checks)  
-git push -u --no-verify (if Angular runs checks)  
+git commit -m "modal height" && git push -u  
+(if Angular runs checks) git commit -m "modal height" --no-verify && git push -u --no-verify   
 
 ### Pull master
 git checkout master && git pull
