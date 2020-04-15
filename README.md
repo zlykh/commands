@@ -9,3 +9,6 @@ git  checkout -b feature/modal-height
 git add *scss  
 git commit -m "modal height" --no-verify (if Angular runs checks)  
 git push -u --no-verify (if Angular runs checks)  
+
+### Pull master
+git checkout master && git pull
