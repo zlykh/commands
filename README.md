@@ -16,6 +16,7 @@ git commit -m "modal height" && git push -u
 
 ### Push overwrite
 git commit --amend --no-edit && git push -u --force
+git add * && commit --amend --no-edit && git push -u --force
 
 ### Pull master
 git checkout master && git pull
