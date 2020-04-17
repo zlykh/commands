@@ -9,7 +9,7 @@ git config rebase.autoStash true
 
 ## Etc
 ### Git pull all folders from parent
-find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;  
+find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} checkout master \\; -exec git -C {} pull \\;  
 
 ### Create branch, commit & push  
 git  checkout -b feature/modal-height  
