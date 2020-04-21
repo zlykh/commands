@@ -23,3 +23,9 @@ git add * && git commit --amend --no-edit && git push -u --force
 
 ### Pull master
 git checkout master && git pull
+
+
+## Dynamo Java SDK to use profile
+AmazonDynamoDB dynamo = AmazonDynamoDBClientBuilder.standard()  
+        .withCredentials(new ProfileCredentialsProvider("shiny"))  
+        .withRegion(Regions.fromName("region")).build();  
